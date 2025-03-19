@@ -25,3 +25,16 @@ jobs:
           bundler-cache: true
       - name: Run the default task
         run: bundle exec rake
+
+  lint:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # for super-linter
+      - name: Super-Linter
+        uses: super-linter/super-linter@v7.3.0
+        env:
+          LINTER_RULES_PATH: /
+          LOG_LEVEL: NOTICE
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
