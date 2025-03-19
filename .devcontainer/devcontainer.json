@@ -1,0 +1,25 @@
+{
+  "name": "cybernetic-ruby-on-goroutine",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "developer",
+  "onCreateCommand": ["./.devcontainer/on_create_command.bash"],
+  "updateContentCommand": ["./.devcontainer/update_content_command.bash"],
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "type=bind,source=${localWorkspaceFolder},target=/workspace,consistency=cached",
+  "otherPortsAttributes": { "onAutoForward": "ignore" },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "EditorConfig.EditorConfig",
+        "Shopify.ruby-lsp",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
