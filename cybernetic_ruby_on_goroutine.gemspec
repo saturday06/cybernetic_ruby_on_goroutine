@@ -30,4 +30,6 @@ Gem::Specification.new do |spec|
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+  spec.extensions = ["ext/cybernetic_ruby_on_goroutine/extconf.rb"]
+  spec.add_dependency "go_gem"
 end

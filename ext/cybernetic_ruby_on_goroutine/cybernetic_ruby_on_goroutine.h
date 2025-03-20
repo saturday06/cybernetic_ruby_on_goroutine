@@ -1,0 +1,6 @@
+#ifndef CYBERNETIC_RUBY_ON_GOROUTINE_H
+#define CYBERNETIC_RUBY_ON_GOROUTINE_H 1
+
+#include "ruby.h"
+
+#endif /* CYBERNETIC_RUBY_ON_GOROUTINE_H */
