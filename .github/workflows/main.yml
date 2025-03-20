@@ -45,4 +45,5 @@ jobs:
           LOG_LEVEL: NOTICE
           VALIDATE_RUBY: false
           VALIDATE_GO_MODULES: false
+          VALIDATE_CPP: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
