@@ -25,6 +25,7 @@ RUN apt-get update -q \
         'libgdbm-dev=*' \
         'libdb-dev=*' \
         'uuid-dev=*' \
+        'unzip=*' \
         --yes --no-install-recommends \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
@@ -40,3 +41,5 @@ RUN git clone https://github.com/rbenv/rbenv.git ~/.rbenv && ~/.rbenv/bin/rbenv 
 
 # https://github.com/rbenv/ruby-build/tree/v20250318?tab=readme-ov-file#clone-as-rbenv-plugin-using-git
 RUN git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+RUN curl --fail --show-error --location https://fnm.vercel.app/install | bash
