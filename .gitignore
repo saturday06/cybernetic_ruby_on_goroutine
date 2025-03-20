@@ -8,10 +8,10 @@
 /tmp/
 
 # rspec failure tracking
-.rspec_status
+/.rspec_status
 
 # rubyのバージョンは一般的なアプリ開発では固定するべきだが、本レポジトリでは諸事情により固定しない。
-.ruby-version
+/.ruby-version
 
 # gemのバージョンは一般的なアプリ開発では固定するべきだが、本レポジトリでは諸事情により固定しない。
-Gemfile.lock
+/Gemfile.lock
