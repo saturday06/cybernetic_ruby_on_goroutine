@@ -16,6 +16,8 @@ RUN apt-get update -q \
         libssl-dev \
         libyaml-dev \
         libreadline6-dev \
+        shellcheck \
+        shfmt \
         zlib1g-dev \
         libgmp-dev \
         libncurses5-dev \
