@@ -25,6 +25,9 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: ext/cybernetic_ruby_on_goroutine/go.mod
       - name: Run the default task
         run: bundle exec rake
 
