@@ -1,5 +1,7 @@
 name: Ruby
 
+permissions: {}
+
 on:
   push:
     branches:
