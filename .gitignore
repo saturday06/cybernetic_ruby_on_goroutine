@@ -9,3 +9,9 @@
 
 # rspec failure tracking
 .rspec_status
+
+# rubyのバージョンは本来は固定するべきだが、諸事情により固定しない。
+.ruby-version
+
+# gemのバージョンは本来は固定するべきだが、諸事情により固定しない。
+Gemfile.lock
