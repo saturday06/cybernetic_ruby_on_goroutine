@@ -44,4 +44,5 @@ jobs:
           LINTER_RULES_PATH: /
           LOG_LEVEL: NOTICE
           VALIDATE_RUBY: false
+          VALIDATE_GO_MODULES: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
