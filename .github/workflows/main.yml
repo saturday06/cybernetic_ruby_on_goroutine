@@ -35,6 +35,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # for super-linter
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+      - name: Bundle
+        run: bundle
       - name: Super-Linter
         uses: super-linter/super-linter@v7.3.0
         env:
