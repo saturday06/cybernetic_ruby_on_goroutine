@@ -12,4 +12,4 @@ latest_cruby_version=$(bash -ic "rbenv install --list-all" | grep -E '^[0-9]+\.[
 
 bash -ic "rbenv install '$latest_cruby_version'"
 bash -ic "rbenv local '$latest_cruby_version'"
-bash -ic "bundle"
+bash -ic "./bin/setup"
