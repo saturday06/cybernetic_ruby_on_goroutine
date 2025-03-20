@@ -15,7 +15,7 @@ RUN apt-get update -q \
         'rustc=*' \
         'libssl-dev=*' \
         'libyaml-dev=*' \
-        'libreadline6-dev=*' \
+        'libreadline-dev=*' \
         'shellcheck=*' \
         'shfmt=*' \
         'zlib1g-dev=*' \
