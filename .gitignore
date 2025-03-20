@@ -7,6 +7,8 @@
 /spec/reports/
 /tmp/
 
+/lib/cybernetic_ruby_on_goroutine/cybernetic_ruby_on_goroutine.so
+
 # rspec failure tracking
 /.rspec_status
 
