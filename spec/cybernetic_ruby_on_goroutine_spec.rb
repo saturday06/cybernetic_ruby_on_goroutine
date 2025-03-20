@@ -5,7 +5,7 @@ RSpec.describe CyberneticRubyOnGoroutine do
     expect(CyberneticRubyOnGoroutine::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(false)
+  it "can sum numbers" do
+    expect(CyberneticRubyOnGoroutine.sum(1, 2)).to eq(3)
   end
 end
