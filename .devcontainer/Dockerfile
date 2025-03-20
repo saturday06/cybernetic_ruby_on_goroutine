@@ -12,6 +12,7 @@ RUN apt-get update -q \
         'autoconf=*' \
         'patch=*' \
         'build-essential=*' \
+        "gdb-multiarch=*" \
         'rustc=*' \
         'libssl-dev=*' \
         'libyaml-dev=*' \
